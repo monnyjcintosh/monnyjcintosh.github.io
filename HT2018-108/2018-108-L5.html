@@ -189,19 +189,19 @@
 <p>But this doesn't in and of itself rule out the possibility that M is identical to L. So why does Tarski think that it can't be?</p>
 </section><section class="slide level2">
 
-<p>Suppose that M is identical to L, and meets the two constraints I just mentioned. Then the predicate <em>true<sub>L</sub></em> can be defined within L itself.</p>
+<p>Suppose that M is identical to L, and meets the two constraints I just mentioned. Then the predicate 'true<sub>L</sub>' can be defined within L itself.</p>
 </section><section class="slide level2">
 
-<p>So long as L contains a negation operator, ¬, it will also contain a Liar sentence: a sentence of the form <em>¬true<sub>L</sub>(λ)</em> whose name in L is of the form λ.</p>
+<p>Suppose L also contains a negation operator and the resources required for self-reference. Then it also contains a Liar sentence, λ = '¬true<sub>L</sub>(λ)'.</p>
 </section><section class="slide level2">
 
-<p>And by Convention T, the definition of <em>true<sub>L</sub></em> entails a theorem of the form, <em>¬true<sub>L</sub>(λ) IFF true<sub>L</sub>(λ)</em>.</p>
+<p>By Convention T, the definition of 'true<sub>L</sub>' entails the theorem, ¬true<sub>L</sub>('¬true<sub>L</sub>(λ)') IFF true<sub>L</sub>(λ).</p>
 </section><section class="slide level2">
 
-<p>But now we have the two premises we need for the Liar Paradox. So as long as we've got a classical logic, a contradiction follows.</p>
+<p>And now we have the two premises we need for the Liar Paradox. So as long as we've got a classical logic, a contradiction follows.</p>
 </section><section class="slide level2">
 
-<p>So, if we want to (a) keep classical logic and (b) allow that L contains ¬, we need to give up the assumption that M is identical to L.</p>
+<p>So, if we want to (a) keep classical logic and (b) allow that L contains ¬ and self-reference, we need to give up the assumption that M is identical to L.</p>
 </section><section class="slide level2">
 
 <p>Similarly, M has to be distinct from the meta-metalanguage in which we define <em>its</em> truth predicate. We need an entire <em>hierarchy</em> of languages.</p>
@@ -211,7 +211,7 @@
 </section></section>
 <section><section id="tarskis-solutions" class="titleslide slide level1"><h1>TARSKI'S SOLUTIONS</h1></section><section id="section-3" class="slide level2">
 <h1><!-- --></h1>
-<p>Tarski doesn't just tell us what a definition of <em>true<sub>L</sub></em> will have to look like. He shows how to construct it for various given languages L.</p>
+<p>Tarski doesn't just tell us what a definition of 'true<sub>L</sub>' will have to look like. He shows how to construct it for various given languages L.</p>
 </section><section id="finite-languages" class="slide level2">
 <h1>FINITE LANGUAGES</h1>
 <p>It's very easy in some simple cases. Suppose L<sub>1</sub> contains just two sentences, '1 + 1 = 2' and '1 + 1 = 3'.</p>
@@ -233,8 +233,8 @@
 <li><p>If so, is it materially adequate?</p></li>
 </ul>
 </section><section id="recursive-definitions" class="slide level2">
-<h1> RECURSIVE DEFINITIONS</h1>
-<p>Defining <em>true<sub>L<sub>1</sub></sub></em> is straightforward. We just list out the truth conditions of the sentences of L<sub>1</sub>.</p>
+<h1>RECURSIVE DEFINITIONS</h1>
+<p>Defining 'true<sub>L<sub>1</sub></sub>' is straightforward. We just list out the truth conditions of the sentences of L<sub>1</sub>.</p>
 </section><section class="slide level2">
 
 <p>But now consider the language, L<sub>2</sub>, that extends L<sub>1</sub> with the connectives, ¬ and ∧.</p>
@@ -245,20 +245,20 @@
 
 <p>In this case, Tarski suggests we give a <em>recursive</em> definition:</p>
 <ul>
-<li>We first define <em>true<sub>L<sub>2</sub></sub></em> for atomic sentences</li>
-<li>We then define <em>true<sub>L<sub>2</sub></sub></em> for complex sentences</li>
+<li>We first define 'true<sub>L<sub>2</sub></sub>' for atomic sentences</li>
+<li>We then define 'true<sub>L<sub>2</sub></sub>' for complex sentences</li>
 </ul>
 </section><section class="slide level2">
 
-<p>A recursive definition of <em>true<sub>L<sub>2</sub></sub></em> might be:</p>
+<p>A recursive definition of 'true<sub>L<sub>2</sub></sub>' might be:</p>
 </section><section class="slide level2">
 
 <p>∀x, y, z (x is true<sub>L<sub>2</sub></sub> IFF</p>
 <ul>
 <li><p>x = '1 + 1 = 2' and one plus one is two OR</p></li>
 <li><p>x = '1 + 1 = 3' and one plus one is three OR</p></li>
-<li><p>y is a sentence and x = ⌜¬y⌝ is not true<sub>L<sub>2</sub></sub> OR</p></li>
-<li><p>y and z are sentences and x = ⌜(y∧z)⌝ and x and y are true<sub>L<sub>2</sub></sub>)</p></li>
+<li><p>y is a sentence and x = ⌜¬y⌝ and y is not true<sub>L<sub>2</sub></sub> OR</p></li>
+<li><p>y and z are sentences and x = ⌜(y∧z)⌝ and y and z are true<sub>L<sub>2</sub></sub>)</p></li>
 </ul>
 </section><section class="slide level2">
 
@@ -317,7 +317,7 @@
 <p>To explicate a concept is to provide a predicate that can replace predicates expressing that concept in legitimate theoretical contexts and lacks their defects.</p>
 </section><section id="problems" class="slide level2">
 <h1> PROBLEMS</h1>
-<p>But various problems might be raised. First, there is <strong>THE PROBLEM OF TRUTH-CONDITIONAL SEMANTICS</strong>.</p>
+<p>But various problems might be raised. First, there is <strong>THE PROBLEM OF TRUTH-CONDITIONAL SEMANTICS</strong> (Dummett 1959, Soames 1999).</p>
 </section><section class="slide level2">
 
 <p>One of the main approaches to meaning in philosophy of language and linguistics is that of truth-conditional semantics.</p>
@@ -341,7 +341,7 @@
 <p>More exactly: a Tarskian definition cannot <em>both</em> (a) tell us what the sentences of the object language mean <em>and</em> (b) tell us what the predicate being defined means.</p>
 </section><section class="slide level2">
 
-<p>Second, there's <strong>THE PROBLEM OF MODAL DIFFERENCE</strong>. Recall the definition of 'true<sub>L<sub>1</sub></sub>':</p>
+<p>Second, there's <strong>THE PROBLEM OF MODAL DIFFERENCE</strong> (Putnam 1985). Recall the definition of 'true<sub>L<sub>1</sub></sub>':</p>
 </section><section class="slide level2">
 
 <p>∀x (x is true<sub>L<sub>1</sub></sub> IFF</p>
@@ -351,7 +351,7 @@
 </ul>
 </section><section class="slide level2">
 
-<p>If we replace 'true<sub>L<sub>1</sub></sub>' in '1 + 1 = 2' is true<sub>L<sub>1</sub></sub> with its definiens, we get:</p>
+<p>If we replace 'true<sub>L<sub>1</sub></sub>' in ''1 + 1 = 2' is true<sub>L<sub>1</sub></sub>' with its definiens, we get:</p>
 </section><section class="slide level2">
 
 <p>('1 + 1 = 2' is '1 + 1 = 2' and one plus one is two) OR ('1 + 1 = 2' is '1 + 1 = 3 and one plus one is three)</p>
@@ -363,13 +363,13 @@
 <p>But surely '1 + 1 = 2' is not <em>true</em> in all worlds. For example, isn't it false in worlds in which '2' refers to three, and all the other words have their actual meaning?</p>
 </section><section class="slide level2">
 
-<p>Third, there's <strong>THE PROBLEM OF NON-PROJECTABILITY</strong>. Tarski's definitions don't <em>project</em>.</p>
+<p>Third, there's <strong>THE PROBLEM OF NON-PROJECTABILITY</strong> (Black 1948). Tarski's definitions don't <em>project</em>.</p>
 </section><section class="slide level2">
 
 <p>They don't tell us under what conditions other truth predicates, for other languages, hold of the sentences of those languages.</p>
 </section><section class="slide level2">
 
-<p>Fourth, there is <strong>THE PROBLEM OF EPISTEMIC DIFFERENCE</strong>. Knowing a sentence's truth conditions gives us at least <em>negative</em> information about its meaning.</p>
+<p>Fourth, there is <strong>THE PROBLEM OF EPISTEMIC DIFFERENCE</strong> (Soames 1999). Knowing a sentence's truth conditions gives us at least <em>negative</em> information about its meaning.</p>
 </section><section class="slide level2">
 
 <p>For example, knowing that 'La neige est blanche' is true IFF snow is white tells us that it <em>doesn't</em> mean the same as 'Snow is not white'.</p>

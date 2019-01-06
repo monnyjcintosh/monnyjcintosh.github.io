@@ -48,6 +48,24 @@ a:hover {
   line-height: 20px;
 }
 
+#main p.bibliography {
+	  margin: 0px 0;
+
+	  font-size: 15px;
+
+	  line-height: 20px;
+}
+
+#main p.last {
+	  margin: 0px 0;
+	
+	  margin-bottom: 20px;
+
+	  font-size: 15px;
+
+	  line-height: 20px;
+}
+
 #main ul, #main ol {
   margin: 20px;
 }
